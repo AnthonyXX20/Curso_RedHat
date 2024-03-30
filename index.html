@@ -1,0 +1,56 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Chat SENATI -V SEMESTRE</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script>
+        $(function(){
+            $("#tabs").tabs()
+            $("#btn_Enviar_Mensaje").button();
+            $("#btn_Actualizar_Mensaje").button();
+            $("#Pantalla_Mensajes").css("height",screen.height-400)
+
+            setTimeout(function(){
+                
+            },3000);
+        });
+    </script>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Chat Grupal</a></li>
+        </ul>    
+        <div id="tabs-1">
+            <div id="Pantalla_Mensajes" style="padding: 10px ;border: 1px solid #e8ece8; float: right; width: 100%; overflow: auto;">
+                <div style="height: 80px; width: 99%;background-color: #eaf5fe; border: 1px solid #2e6e9e; padding: 5px;border-radius: 3px;">
+                    <span style="font-size: 14px; color: #2e6e9e;">Jeffrey</span>
+                    <br>
+                    <span> Hola buenos dias</span>
+                </div>
+                <br>
+            </div>
+            <div>
+                <label for="Cifrado_Punto_a_Punto">Cifrar punto a punto
+                    <input type="checkbox" name="Cifrado_Punto_a_Punto" id="chk_Cifrado">
+                </label>
+            </div>
+            <div>
+                
+                <textarea id="txt_Mensaje" style="width:100%" cols="100%" rows="5">
+                </textarea>
+            </div>
+            <br/>
+            <div>
+                <button id="btn_Enviar_Mensaje">Enviar Mensaje</button>
+                <button id="btn_Actualizar_Mensaje">Actualizar</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+</body>
+</html>
